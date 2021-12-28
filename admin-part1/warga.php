@@ -51,7 +51,6 @@
 									<th>Status</th>
 									<th>Pendidikan</th>
 									<th>Agama</th>
-									<th>Foto</th>
 									<th width="11%">Opsi</th>
 								</tr>
 
@@ -77,7 +76,6 @@
 												<td><?php echo $w['warga_status']?></td>
 												<td><?php echo $w['warga_pendidikan']?></td>
 												<td><?php echo $w['warga_agama']?></td>
-												<td><img src="./../uploads/<?php echo $w['foto']?>" width="40" height="40" alt="gambar"></td>
 												<td>
 													<a href="warga_edit.php?id=<?php echo $w['warga_id'] ?>" class="btn btn-warning btn-sm text-white">Edit</a>
 													<a href="warga_Hapus.php?id=<?php echo $w['warga_id'] ?>" class="btn btn-danger btn-sm">Hapus</a>

@@ -1,7 +1,6 @@
 <?php 
 	include 'head.php';
 ?>
-
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 mx-auto">
@@ -12,7 +11,7 @@
 							<hr>
 							<a href="warga.php" class="btn btn-success btn-sm mb-5">Kembali</a>
 
-							<form action="warga_tambah_aksi.php" method="post" enctype="multipart/form-data">
+							<form action="warga_tambah_aksi.php" method="post">
 								<div class="form-group">
 									<label>Nama</label>
 									<input type="text" name="nama" class="form-control" required="required">
@@ -83,7 +82,7 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<label>Agamass</label>
+									<label>Agama</label>
 									<select name="agama" class="form-control">
 										<option value=""> - Pilih -</option>
 										<option value="Islam">Islam</option>
@@ -93,8 +92,6 @@
 										<option value="Kong hu chu">Kong Hu Chu</option>
 									</select>
 								</div>
-								<label for="fileToUpload">Foto</label>
-								<input type="file" class="form-control" name="fileToUpload" id="fileToUpload">
 								<div class="form-group">
 									<input type="submit" name="submit" value="Simpan" class="btn btn-success btn-block">
 								</div>

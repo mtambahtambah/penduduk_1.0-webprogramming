@@ -1,6 +1,5 @@
 <?php 
 include './koneksi.php';
-include './warga_tambah_foto.php';
 $nama = $_POST['nama'];
 $ktp = $_POST['ktp'];
 $jk = $_POST['jk'];
@@ -11,6 +10,6 @@ $rw = $_POST['rw'];
 $status = $_POST['status'];
 $pendidikan = $_POST['pendidikan'];
 $agama = $_POST['agama'];
-mysqli_query($koneksi,"INSERT INTO warga(warga_nama,warga_ktp,warga_jk,warga_desa,warga_dusun,warga_rt,warga_rw,warga_status,warga_pendidikan,warga_agama,foto) VALUES('$nama','$ktp','$jk','$desa','$dusun','$rt','$rw','$status','$pendidikan','$agama','$ubahNamae')");
+mysqli_query($koneksi,"INSERT INTO warga(warga_nama,warga_ktp,warga_jk,warga_desa,warga_dusun,warga_rt,warga_rw,warga_status,warga_pendidikan,warga_agama) VALUES('$nama','$ktp','$jk','$desa','$dusun','$rt','$rw','$status','$pendidikan','$agama')");
 header('location:warga.php');
 ?>

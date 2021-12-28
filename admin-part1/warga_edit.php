@@ -15,7 +15,7 @@
 							$warga = mysqli_query($koneksi,"SELECT * FROM warga WHERE warga_id='$id' ");
 							while($w = mysqli_fetch_array($warga)){
 							?>
-							<form action="warga_update.php" method="post" enctype="multipart/form-data">
+							<form action="warga_update.php" method="post">
 								<div class="form-group">
 									<label>Nama</label>
 									<input type="text" name="nama" class="form-control" required="required" value="<?php echo $w['warga_nama'] ?>">
@@ -98,9 +98,6 @@
 										<option <?php if($w['warga_agama'] == 'Kong Hu Chu'){echo "selected='selected'";} ?> value="Kong hu chu">Kong Hu Chu</option>
 									</select>
 								</div>
-								<label for="fileToUpload">Foto (kosongkan: jika tida ingin di edit)</label>
-                                <input type="file" class="form-control" name="fileToUpload" id="fileToUpload">
-                                <input type="hidden" class="form-control" name="fileToUpload_yg_lama" value="<?= $w['foto'];?>">
 								<div class="form-group">
 									<input type="submit" name="submit" value="Simpan" class="btn btn-success btn-block">
 								</div>

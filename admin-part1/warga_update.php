@@ -1,6 +1,5 @@
 <?php 
 include './koneksi.php';
-include './warga_edit_foto.php';
 $id = $_POST['id'];
 $nama = $_POST['nama'];
 $ktp = $_POST['ktp'];
@@ -13,7 +12,7 @@ $status = $_POST['status'];
 $pendidikan = $_POST['pendidikan'];
 $agama = $_POST['agama'];
 
-mysqli_query($koneksi,"UPDATE warga SET warga_nama='$nama', warga_ktp='$ktp', warga_jk='$jk', warga_desa='$desa', warga_dusun='$dusun', warga_rt='$rt', warga_rw='$rw', warga_status='$status', warga_pendidikan='$pendidikan', warga_agama='$agama', foto='$ubahNamae' WHERE warga_id='$id' ");
+mysqli_query($koneksi,"UPDATE warga SET warga_nama='$nama', warga_ktp='$ktp', warga_jk='$jk', warga_desa='$desa', warga_dusun='$dusun', warga_rt='$rt', warga_rw='$rw', warga_status='$status', warga_pendidikan='$pendidikan', warga_agama='$agama' WHERE warga_id='$id' ");
 header('location:warga.php');
 
 ?>
